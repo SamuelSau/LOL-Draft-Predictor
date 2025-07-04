@@ -17,3 +17,36 @@ CHAMPION_LIST = [
     "Viktor", "Vladimir", "Volibear", "Warwick", "Wukong", "Xayah", "Xerath", "Xin Zhao", "Yasuo", "Yone",
     "Yorick", "Yuumi", "Zac", "Zed", "Zeri", "Ziggs", "Zilean", "Zoe", "Zyra"
 ] 
+
+ROLE_CHAMPIONS = {
+    "top": [
+        "Aatrox", "Akali", "Camille", "Cho'Gath", "Darius", "Dr. Mundo", "Fiora", "Gangplank", "Garen", "Gnar",
+        "Gwen", "Illaoi", "Irelia", "Jax", "Jayce", "K'Sante", "Kayle", "Kennen", "Kled", "Malphite",
+        "Mordekaiser", "Nasus", "Olaf", "Ornn", "Pantheon", "Poppy", "Quinn", "Renekton", "Riven", "Rumble",
+        "Sett", "Shen", "Singed", "Sion", "Tahm Kench", "Teemo", "Trundle", "Tryndamere", "Udyr", "Urgot",
+        "Volibear", "Wukong", "Yasuo", "Yone", "Yorick"
+    ],
+    "jungle": [
+        "Amumu", "Bel'Veth", "Briar", "Diana", "Dr. Mundo", "Ekko", "Elise", "Evelynn", "Fiddlesticks", "Gragas", "Graves",
+        "Hecarim", "Ivern", "Jarvan IV", "Karthus", "Kayn", "Kha'Zix", "Kindred", "Lee Sin", "Lillia", "Maokai",
+        "Master Yi", "Nidalee", "Nocturne", "Nunu & Willump", "Rammus", "Rek'Sai", "Sejuani", "Shaco", "Shyvana", 
+        "Taliyah", "Trundle", "Vi", "Viego", "Warwick", "Wukong", "Xin Zhao", "Zac", "Zed", "Zyra"
+    ],
+    "mid": [
+        "Ahri", "Akali", "Anivia", "Annie", "Aurelion Sol", "Aurora", "Azir", "Cassiopeia", "Corki", "Diana",
+        "Ekko", "Fizz", "Galio", "Hwei", "Karma", "Kassadin", "Katarina", "LeBlanc", "Lissandra", "Lux",
+        "Malzahar", "Mel", "Naafiri", "Neeko", "Orianna", "Qiyana", "Ryze", "Sylas", "Syndra", "Talon",
+        "Twisted Fate", "Vex", "Viktor", "Vladimir", "Xerath", "Yasuo", "Yone", "Zed", "Ziggs", "Zoe"
+    ],
+    "bot": [
+        "Aphelios", "Ashe", "Caitlyn", "Draven", "Ezreal", "Jhin", "Jinx", "Kai'Sa", "Kalista", "Kog'Maw",
+        "Lucian", "Miss Fortune", "Nilah", "Samira", "Senna", "Sivir", "Smolder", "Tristana", "Twitch",
+        "Varus", "Vayne", "Xayah", "Zeri"
+    ],
+    "support": [
+        "Alistar", "Ashe", "Bard", "Blitzcrank", "Brand", "Braum", "Galio", "Heimerdinger", "Hwei", "Janna",
+        "Karma", "Leona", "Lulu", "Lux", "Maokai", "Milio", "Morgana", "Nami", "Nautilus", "Neeko",
+        "Pyke", "Rakan", "Rell", "Renata Glasc", "Senna", "Seraphine", "Sona", "Soraka", "Swain", "Taric",
+        "Thresh", "Twisted Fate", "Vel'Koz", "Xerath", "Yuumi", "Zilean", "Zyra"
+    ]
+}

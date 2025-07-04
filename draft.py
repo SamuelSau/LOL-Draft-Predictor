@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from sklearn.model_selection import train_test_split
-from champion_list import CHAMPION_LIST
+from champion_list import ROLE_CHAMPIONS
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
@@ -13,12 +13,13 @@ from sklearn.metrics import confusion_matrix, classification_report
 USE_CUDA = torch.cuda.is_available()
 DEVICE = torch.device("cuda" if USE_CUDA else "cpu")
 LEARNING_RATE = 0.001
-EPOCHS = 50
-BATCH_SIZE = 64
+EPOCHS = 10
+BATCH_SIZE = 16
 
-EXAMPLE_FILE = "example.npz"
+MATCH_FILE = "league_games.npz"
 ROLES = ["top", "jungle", "mid", "bot", "support"]
-NUM_CHAMPIONS = len(CHAMPION_LIST)
+CHAMPION_LIST = [champ for role in ROLES for champ in ROLE_CHAMPIONS[role]]
+NUM_CHAMPIONS = len(set(CHAMPION_LIST))
 SAVE_PLOTS = True
 
 # ========== LOAD DATA ========== #
@@ -34,8 +35,9 @@ def load_dataset_from_npz(path):
         print(f"Failed to load {path}: {str(e)}")
         return np.array([], dtype=np.float32), np.array([], dtype=np.float32)
 
-X, y = load_dataset_from_npz(EXAMPLE_FILE)
-print(f"Loaded X shape: {X.shape}, y shape: {y.shape}")
+data = np.load("league_games.npz")
+
+X, y = load_dataset_from_npz(MATCH_FILE)
 
 # Label distribution diagnostic
 unique, counts = np.unique(y, return_counts=True)
@@ -72,7 +74,6 @@ class DraftWinPredictor(nn.Module):
             nn.Linear(512, 256),
             nn.ReLU(),
             nn.Linear(256, 1)
-            # No sigmoid here (we use BCEWithLogitsLoss)
         )
 
     def forward(self, x):
@@ -95,7 +96,7 @@ for epoch in range(EPOCHS):
     for i in range(0, X_train.size(0), BATCH_SIZE):
         indices = perm[i:i + BATCH_SIZE]
         batch_x, batch_y = X_train[indices], y_train[indices]
-
+        batch_y = batch_y.view(-1, 1)
         optimizer.zero_grad()
         logits = model(batch_x)
         loss = criterion(logits, batch_y)
@@ -106,21 +107,35 @@ for epoch in range(EPOCHS):
     train_losses.append(epoch_loss)
 
     model.eval()
+    val_preds_all = []
     with torch.no_grad():
-        val_logits = model(X_test)
-        val_preds = torch.sigmoid(val_logits)
+        for i in range(0, X_test.size(0), BATCH_SIZE):
+            batch_x = X_test[i:i + BATCH_SIZE]
+            batch_logits = model(batch_x)
+            batch_probs = torch.sigmoid(batch_logits)
+            val_preds_all.append(batch_probs)
+
+        val_preds = torch.cat(val_preds_all, dim=0).cpu().view(-1)
+        y_test_cpu = y_test.cpu().view(-1)
         val_preds_class = (val_preds > 0.5).float()
-        val_accuracy = (val_preds_class == y_test).float().mean().item()
+        val_accuracy = (val_preds_class == y_test_cpu).float().mean().item()
         val_accuracies.append(val_accuracy)
 
     print(f"Epoch {epoch + 1}/{EPOCHS}, Loss: {epoch_loss:.4f}, Val Accuracy: {val_accuracy:.4f}")
 
 # ========== FINAL EVALUATION ========== #
 with torch.no_grad():
-    logits = model(X_test)
-    probs = torch.sigmoid(logits)
+    preds_all = []
+    for i in range(0, X_test.size(0), BATCH_SIZE):
+        batch_x = X_test[i:i + BATCH_SIZE]
+        batch_logits = model(batch_x)
+        batch_probs = torch.sigmoid(batch_logits)
+        preds_all.append(batch_probs)
+
+    probs = torch.cat(preds_all, dim=0).cpu().view(-1)
     preds_class = (probs > 0.5).float()
-    accuracy = (preds_class == y_test).float().mean().item()
+    y_test_cpu = y_test.cpu().view(-1)
+    accuracy = (preds_class == y_test_cpu).float().mean().item()
     print(f"\n✅ Final Test Accuracy: {accuracy:.4f}")
 
     y_true = y_test.cpu().numpy().flatten()
@@ -130,12 +145,29 @@ with torch.no_grad():
     print(classification_report(y_true, y_pred, target_names=["Blue Loss", "Blue Win"]))
 
 # ========== PREDICTION SAMPLE DEBUG ========== #
+"""
 with torch.no_grad():
     sample_logits = model(X_test[:10])
     sample_probs = torch.sigmoid(sample_logits).cpu().numpy().flatten()
     print("\n🧪 Sample predictions:")
     print(np.round(sample_probs, 3))
+"""
+# ========== PREDICTION SAMPLE DEBUG ========== #
+with torch.no_grad():
+    sample = X_test[0].unsqueeze(0)  # Single match input
+    output = model(sample)
+    prob = torch.sigmoid(output).item()
+    print("\n🔍 Inspecting First Sample:")
+    print(f"Predicted win probability for blue team: {prob:.4f}")
+    print(f"Prediction: {'Blue Win ✅' if prob > 0.5 else 'Blue Loss ❌'}")
 
+    # Optional: show stats breakdown
+    stats = sample.cpu().numpy()[0][-60:]  # last 60 features
+    stats = stats.reshape(10, 6)  # 10 players × 6 stats
+    print("\n📊 Blue Team Stats:")
+    print(np.round(stats[:5], 2))
+    print("\n📊 Red Team Stats:")
+    print(np.round(stats[5:], 2))
 # ========== VISUALIZATION ========== #
 os.makedirs("plots", exist_ok=True)
 
