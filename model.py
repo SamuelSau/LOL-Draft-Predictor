@@ -3,22 +3,32 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from sklearn.model_selection import train_test_split
-from champion_list import ROLE_CHAMPIONS
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report
+import time
+import json
+
+#safety check for opening the constants file
+if not os.path.exists("league_constants.json"):
+    print("Error: league_constants.json not found. Please ensure it exists in the current directory.")
+    import sys
+    sys.exit(1)
+
+with open("league_constants.json", "r", encoding="utf-8") as f:
+    constants = json.load(f)
 
 # ========== CONFIG ========== #
 USE_CUDA = torch.cuda.is_available()
 DEVICE = torch.device("cuda" if USE_CUDA else "cpu")
 LEARNING_RATE = 0.001
 EPOCHS = 10
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 
 MATCH_FILE = "league_games.npz"
 ROLES = ["top", "jungle", "mid", "bot", "support"]
-CHAMPION_LIST = [champ for role in ROLES for champ in ROLE_CHAMPIONS[role]]
+CHAMPION_LIST = constants["CHAMPION_LIST"]
 NUM_CHAMPIONS = len(set(CHAMPION_LIST))
 SAVE_PLOTS = True
 
@@ -35,7 +45,13 @@ def load_dataset_from_npz(path):
         print(f"Failed to load {path}: {str(e)}")
         return np.array([], dtype=np.float32), np.array([], dtype=np.float32)
 
-data = np.load("league_games.npz")
+file_size_bytes = os.path.getsize(MATCH_FILE)
+file_size_mb = file_size_bytes / (1024 * 1024)
+file_size_gb = file_size_bytes / (1024 * 1024 * 1024)
+
+print(f"File size of '{MATCH_FILE}': {file_size_mb:.2f} MB ({file_size_gb:.2f} GB)")
+
+data = np.load(MATCH_FILE)
 
 X, y = load_dataset_from_npz(MATCH_FILE)
 
@@ -44,16 +60,10 @@ unique, counts = np.unique(y, return_counts=True)
 print(f"Label distribution: {dict(zip(unique, counts))}")
 
 if len(X) == 0 or len(y) == 0:
-    print("❌ Error: Empty dataset. Exiting.")
+    print("Error: Empty dataset. Exiting.")
     import sys
     sys.exit(1)
 
-# Normalize only the last 6 stats per player (last 6 × 10 = 60 features)
-NUMERIC_START = X.shape[1] - 60
-numeric_part = X[:, NUMERIC_START:]
-mean = numeric_part.mean(axis=0)
-std = numeric_part.std(axis=0) + 1e-8
-X[:, NUMERIC_START:] = (numeric_part - mean) / std
 
 # ========== SPLIT DATA ========== #
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -87,6 +97,8 @@ optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 # ========== TRAINING ========== #
 train_losses = []
 val_accuracies = []
+
+start_train_time = time.time()
 
 for epoch in range(EPOCHS):
     model.train()
@@ -123,6 +135,9 @@ for epoch in range(EPOCHS):
 
     print(f"Epoch {epoch + 1}/{EPOCHS}, Loss: {epoch_loss:.4f}, Val Accuracy: {val_accuracy:.4f}")
 
+end_train_time = time.time()
+print(f"\nTraining completed in {end_train_time - start_train_time:.2f} seconds")
+
 # ========== FINAL EVALUATION ========== #
 with torch.no_grad():
     preds_all = []
@@ -136,7 +151,7 @@ with torch.no_grad():
     preds_class = (probs > 0.5).float()
     y_test_cpu = y_test.cpu().view(-1)
     accuracy = (preds_class == y_test_cpu).float().mean().item()
-    print(f"\n✅ Final Test Accuracy: {accuracy:.4f}")
+    print(f"\nFinal Test Accuracy: {accuracy:.4f}")
 
     y_true = y_test.cpu().numpy().flatten()
     y_pred = preds_class.cpu().numpy().flatten()
@@ -144,30 +159,16 @@ with torch.no_grad():
     print("\nClassification Report:")
     print(classification_report(y_true, y_pred, target_names=["Blue Loss", "Blue Win"]))
 
-# ========== PREDICTION SAMPLE DEBUG ========== #
-"""
-with torch.no_grad():
-    sample_logits = model(X_test[:10])
-    sample_probs = torch.sigmoid(sample_logits).cpu().numpy().flatten()
-    print("\n🧪 Sample predictions:")
-    print(np.round(sample_probs, 3))
-"""
+
 # ========== PREDICTION SAMPLE DEBUG ========== #
 with torch.no_grad():
     sample = X_test[0].unsqueeze(0)  # Single match input
     output = model(sample)
     prob = torch.sigmoid(output).item()
-    print("\n🔍 Inspecting First Sample:")
+    print("\nInspecting First Sample:")
     print(f"Predicted win probability for blue team: {prob:.4f}")
     print(f"Prediction: {'Blue Win ✅' if prob > 0.5 else 'Blue Loss ❌'}")
 
-    # Optional: show stats breakdown
-    stats = sample.cpu().numpy()[0][-60:]  # last 60 features
-    stats = stats.reshape(10, 6)  # 10 players × 6 stats
-    print("\n📊 Blue Team Stats:")
-    print(np.round(stats[:5], 2))
-    print("\n📊 Red Team Stats:")
-    print(np.round(stats[5:], 2))
 # ========== VISUALIZATION ========== #
 os.makedirs("plots", exist_ok=True)
 

@@ -1,3 +1,10 @@
-__pycache__/
 league_games.npz
 plots/
+notes.txt
+list_of_PUUIDS.txt
+list_of_matchIDS.txt
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
