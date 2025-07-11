@@ -1,10 +1,12 @@
 league_games.npz
-plots/
 notes.txt
-list_of_PUUIDS.txt
 list_of_matchIDS.txt
+list_of_PUUIDS.txt
+list_of_match_details.txt
+backup_puuids.txt
 .env
-__pycache__/
+__pycache__
 *.pyc
 *.pyo
 *.pyd
+capture_players.py

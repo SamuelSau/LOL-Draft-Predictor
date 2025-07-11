@@ -1,0 +1,2783 @@
+{
+    "CHAMPION_LIST_GLOBAL_WINRATE": [
+        {
+            "name": "Aatrox",
+            "role": "top",
+            "winrate": 0.499915
+        },
+        {
+            "name": "Akali",
+            "role": "top",
+            "winrate": 0.507653
+        },
+        {
+            "name": "Camille",
+            "role": "top",
+            "winrate": 0.509287
+        },
+        {
+            "name": "Cho'Gath",
+            "role": "top",
+            "winrate": 0.515418
+        },
+        {
+            "name": "Darius",
+            "role": "top",
+            "winrate": 0.500704
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "top",
+            "winrate": 0.500584
+        },
+        {
+            "name": "Fiora",
+            "role": "top",
+            "winrate": 0.512097
+        },
+        {
+            "name": "Gangplank",
+            "role": "top",
+            "winrate": 0.507115
+        },
+        {
+            "name": "Garen",
+            "role": "top",
+            "winrate": 0.505378
+        },
+        {
+            "name": "Gnar",
+            "role": "top",
+            "winrate": 0.493953
+        },
+        {
+            "name": "Gwen",
+            "role": "top",
+            "winrate": 0.505073
+        },
+        {
+            "name": "Illaoi",
+            "role": "top",
+            "winrate": 0.493756
+        },
+        {
+            "name": "Irelia",
+            "role": "top",
+            "winrate": 0.508182
+        },
+        {
+            "name": "Jax",
+            "role": "top",
+            "winrate": 0.508719
+        },
+        {
+            "name": "Jayce",
+            "role": "top",
+            "winrate": 0.488753
+        },
+        {
+            "name": "K'Sante",
+            "role": "top",
+            "winrate": 0.484079
+        },
+        {
+            "name": "Kayle",
+            "role": "top",
+            "winrate": 0.524215
+        },
+        {
+            "name": "Kennen",
+            "role": "top",
+            "winrate": 0.522198
+        },
+        {
+            "name": "Kled",
+            "role": "top",
+            "winrate": 0.517484
+        },
+        {
+            "name": "Malphite",
+            "role": "top",
+            "winrate": 0.520905
+        },
+        {
+            "name": "Mordekaiser",
+            "role": "top",
+            "winrate": 0.518795
+        },
+        {
+            "name": "Nasus",
+            "role": "top",
+            "winrate": 0.505803
+        },
+        {
+            "name": "Olaf",
+            "role": "top",
+            "winrate": 0.526559
+        },
+        {
+            "name": "Ornn",
+            "role": "top",
+            "winrate": 0.512276
+        },
+        {
+            "name": "Pantheon",
+            "role": "top",
+            "winrate": 0.507384
+        },
+        {
+            "name": "Poppy",
+            "role": "top",
+            "winrate": 0.51656
+        },
+        {
+            "name": "Quinn",
+            "role": "top",
+            "winrate": 0.532148
+        },
+        {
+            "name": "Renekton",
+            "role": "top",
+            "winrate": 0.503515
+        },
+        {
+            "name": "Riven",
+            "role": "top",
+            "winrate": 0.52096
+        },
+        {
+            "name": "Rumble",
+            "role": "top",
+            "winrate": 0.477812
+        },
+        {
+            "name": "Sett",
+            "role": "top",
+            "winrate": 0.523648
+        },
+        {
+            "name": "Shen",
+            "role": "top",
+            "winrate": 0.514085
+        },
+        {
+            "name": "Singed",
+            "role": "top",
+            "winrate": 0.515009
+        },
+        {
+            "name": "Sion",
+            "role": "top",
+            "winrate": 0.499111
+        },
+        {
+            "name": "Tahm Kench",
+            "role": "top",
+            "winrate": 0.496326
+        },
+        {
+            "name": "Teemo",
+            "role": "top",
+            "winrate": 0.511027
+        },
+        {
+            "name": "Trundle",
+            "role": "top",
+            "winrate": 0.519126
+        },
+        {
+            "name": "Tryndamere",
+            "role": "top",
+            "winrate": 0.502158
+        },
+        {
+            "name": "Udyr",
+            "role": "top",
+            "winrate": 0.491472
+        },
+        {
+            "name": "Urgot",
+            "role": "top",
+            "winrate": 0.523183
+        },
+        {
+            "name": "Volibear",
+            "role": "top",
+            "winrate": 0.511799
+        },
+        {
+            "name": "Wukong",
+            "role": "top",
+            "winrate": 0.512001
+        },
+        {
+            "name": "Yasuo",
+            "role": "top",
+            "winrate": 0.505136
+        },
+        {
+            "name": "Yone",
+            "role": "top",
+            "winrate": 0.472676
+        },
+        {
+            "name": "Yorick",
+            "role": "top",
+            "winrate": 0.504264
+        },
+        {
+            "name": "Amumu",
+            "role": "jungle",
+            "winrate": 0.50102
+        },
+        {
+            "name": "Bel'Veth",
+            "role": "jungle",
+            "winrate": 0.51357
+        },
+        {
+            "name": "Briar",
+            "role": "jungle",
+            "winrate": 0.52136
+        },
+        {
+            "name": "Diana",
+            "role": "jungle",
+            "winrate": 0.514184
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "jungle",
+            "winrate": 0.500584
+        },
+        {
+            "name": "Ekko",
+            "role": "jungle",
+            "winrate": 0.51417
+        },
+        {
+            "name": "Elise",
+            "role": "jungle",
+            "winrate": 0.508128
+        },
+        {
+            "name": "Evelynn",
+            "role": "jungle",
+            "winrate": 0.51236
+        },
+        {
+            "name": "Fiddlesticks",
+            "role": "jungle",
+            "winrate": 0.522428
+        },
+        {
+            "name": "Gragas",
+            "role": "jungle",
+            "winrate": 0.509445
+        },
+        {
+            "name": "Graves",
+            "role": "jungle",
+            "winrate": 0.496003
+        },
+        {
+            "name": "Hecarim",
+            "role": "jungle",
+            "winrate": 0.500167
+        },
+        {
+            "name": "Ivern",
+            "role": "jungle",
+            "winrate": 0.523479
+        },
+        {
+            "name": "Jarvan IV",
+            "role": "jungle",
+            "winrate": 0.515482
+        },
+        {
+            "name": "Karthus",
+            "role": "jungle",
+            "winrate": 0.501223
+        },
+        {
+            "name": "Kayn",
+            "role": "jungle",
+            "winrate": 0.502987
+        },
+        {
+            "name": "Kha'Zix",
+            "role": "jungle",
+            "winrate": 0.513313
+        },
+        {
+            "name": "Kindred",
+            "role": "jungle",
+            "winrate": 0.506241
+        },
+        {
+            "name": "Lee Sin",
+            "role": "jungle",
+            "winrate": 0.507119
+        },
+        {
+            "name": "Lillia",
+            "role": "jungle",
+            "winrate": 0.495704
+        },
+        {
+            "name": "Maokai",
+            "role": "jungle",
+            "winrate": 0.503632
+        },
+        {
+            "name": "Master Yi",
+            "role": "jungle",
+            "winrate": 0.514471
+        },
+        {
+            "name": "Nidalee",
+            "role": "jungle",
+            "winrate": 0.493768
+        },
+        {
+            "name": "Nocturne",
+            "role": "jungle",
+            "winrate": 0.516784
+        },
+        {
+            "name": "Nunu & Willump",
+            "role": "jungle",
+            "winrate": 0.510542
+        },
+        {
+            "name": "Rammus",
+            "role": "jungle",
+            "winrate": 0.510045
+        },
+        {
+            "name": "Rek'Sai",
+            "role": "jungle",
+            "winrate": 0.513171
+        },
+        {
+            "name": "Sejuani",
+            "role": "jungle",
+            "winrate": 0.486591
+        },
+        {
+            "name": "Shaco",
+            "role": "jungle",
+            "winrate": 0.506495
+        },
+        {
+            "name": "Shyvana",
+            "role": "jungle",
+            "winrate": 0.481568
+        },
+        {
+            "name": "Taliyah",
+            "role": "jungle",
+            "winrate": 0.504004
+        },
+        {
+            "name": "Trundle",
+            "role": "jungle",
+            "winrate": 0.519126
+        },
+        {
+            "name": "Vi",
+            "role": "jungle",
+            "winrate": 0.482075
+        },
+        {
+            "name": "Viego",
+            "role": "jungle",
+            "winrate": 0.493022
+        },
+        {
+            "name": "Warwick",
+            "role": "jungle",
+            "winrate": 0.527867
+        },
+        {
+            "name": "Wukong",
+            "role": "jungle",
+            "winrate": 0.512001
+        },
+        {
+            "name": "Xin Zhao",
+            "role": "jungle",
+            "winrate": 0.507904
+        },
+        {
+            "name": "Zac",
+            "role": "jungle",
+            "winrate": 0.509871
+        },
+        {
+            "name": "Zed",
+            "role": "jungle",
+            "winrate": 0.488742
+        },
+        {
+            "name": "Zyra",
+            "role": "jungle",
+            "winrate": 0.505014
+        },
+        {
+            "name": "Ahri",
+            "role": "mid",
+            "winrate": 0.494051
+        },
+        {
+            "name": "Akali",
+            "role": "mid",
+            "winrate": 0.507653
+        },
+        {
+            "name": "Anivia",
+            "role": "mid",
+            "winrate": 0.519727
+        },
+        {
+            "name": "Annie",
+            "role": "mid",
+            "winrate": 0.518481
+        },
+        {
+            "name": "Aurelion Sol",
+            "role": "mid",
+            "winrate": 0.507505
+        },
+        {
+            "name": "Aurora",
+            "role": "mid",
+            "winrate": 0.501212
+        },
+        {
+            "name": "Azir",
+            "role": "mid",
+            "winrate": 0.468832
+        },
+        {
+            "name": "Cassiopeia",
+            "role": "mid",
+            "winrate": 0.516025
+        },
+        {
+            "name": "Corki",
+            "role": "mid",
+            "winrate": 0.486646
+        },
+        {
+            "name": "Diana",
+            "role": "mid",
+            "winrate": 0.514184
+        },
+        {
+            "name": "Ekko",
+            "role": "mid",
+            "winrate": 0.51417
+        },
+        {
+            "name": "Fizz",
+            "role": "mid",
+            "winrate": 0.504237
+        },
+        {
+            "name": "Galio",
+            "role": "mid",
+            "winrate": 0.508594
+        },
+        {
+            "name": "Hwei",
+            "role": "mid",
+            "winrate": 0.506356
+        },
+        {
+            "name": "Karma",
+            "role": "mid",
+            "winrate": 0.50389
+        },
+        {
+            "name": "Kassadin",
+            "role": "mid",
+            "winrate": 0.49983
+        },
+        {
+            "name": "Katarina",
+            "role": "mid",
+            "winrate": 0.513546
+        },
+        {
+            "name": "LeBlanc",
+            "role": "mid",
+            "winrate": 0.508014
+        },
+        {
+            "name": "Lissandra",
+            "role": "mid",
+            "winrate": 0.513009
+        },
+        {
+            "name": "Lux",
+            "role": "mid",
+            "winrate": 0.502095
+        },
+        {
+            "name": "Malzahar",
+            "role": "mid",
+            "winrate": 0.513972
+        },
+        {
+            "name": "Mel",
+            "role": "mid",
+            "winrate": 0.47677
+        },
+        {
+            "name": "Naafiri",
+            "role": "mid",
+            "winrate": 0.506511
+        },
+        {
+            "name": "Neeko",
+            "role": "mid",
+            "winrate": 0.498721
+        },
+        {
+            "name": "Orianna",
+            "role": "mid",
+            "winrate": 0.500939
+        },
+        {
+            "name": "Qiyana",
+            "role": "mid",
+            "winrate": 0.506684
+        },
+        {
+            "name": "Ryze",
+            "role": "mid",
+            "winrate": 0.489861
+        },
+        {
+            "name": "Sylas",
+            "role": "mid",
+            "winrate": 0.497819
+        },
+        {
+            "name": "Syndra",
+            "role": "mid",
+            "winrate": 0.506524
+        },
+        {
+            "name": "Talon",
+            "role": "mid",
+            "winrate": 0.504122
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "mid",
+            "winrate": 0.51221
+        },
+        {
+            "name": "Vex",
+            "role": "mid",
+            "winrate": 0.529372
+        },
+        {
+            "name": "Viktor",
+            "role": "mid",
+            "winrate": 0.498112
+        },
+        {
+            "name": "Vladimir",
+            "role": "mid",
+            "winrate": 0.51187
+        },
+        {
+            "name": "Xerath",
+            "role": "mid",
+            "winrate": 0.509687
+        },
+        {
+            "name": "Yasuo",
+            "role": "mid",
+            "winrate": 0.505136
+        },
+        {
+            "name": "Yone",
+            "role": "mid",
+            "winrate": 0.472676
+        },
+        {
+            "name": "Zed",
+            "role": "mid",
+            "winrate": 0.488742
+        },
+        {
+            "name": "Ziggs",
+            "role": "mid",
+            "winrate": 0.498789
+        },
+        {
+            "name": "Zoe",
+            "role": "mid",
+            "winrate": 0.518211
+        },
+        {
+            "name": "Aphelios",
+            "role": "bot",
+            "winrate": 0.498441
+        },
+        {
+            "name": "Ashe",
+            "role": "bot",
+            "winrate": 0.502587
+        },
+        {
+            "name": "Caitlyn",
+            "role": "bot",
+            "winrate": 0.497462
+        },
+        {
+            "name": "Draven",
+            "role": "bot",
+            "winrate": 0.494681
+        },
+        {
+            "name": "Ezreal",
+            "role": "bot",
+            "winrate": 0.480223
+        },
+        {
+            "name": "Jhin",
+            "role": "bot",
+            "winrate": 0.498572
+        },
+        {
+            "name": "Jinx",
+            "role": "bot",
+            "winrate": 0.521319
+        },
+        {
+            "name": "Kai'Sa",
+            "role": "bot",
+            "winrate": 0.493782
+        },
+        {
+            "name": "Kalista",
+            "role": "bot",
+            "winrate": 0.455882
+        },
+        {
+            "name": "Kog'Maw",
+            "role": "bot",
+            "winrate": 0.531516
+        },
+        {
+            "name": "Lucian",
+            "role": "bot",
+            "winrate": 0.509012
+        },
+        {
+            "name": "Miss Fortune",
+            "role": "bot",
+            "winrate": 0.50947
+        },
+        {
+            "name": "Nilah",
+            "role": "bot",
+            "winrate": 0.529986
+        },
+        {
+            "name": "Samira",
+            "role": "bot",
+            "winrate": 0.510464
+        },
+        {
+            "name": "Senna",
+            "role": "bot",
+            "winrate": 0.499355
+        },
+        {
+            "name": "Sivir",
+            "role": "bot",
+            "winrate": 0.523845
+        },
+        {
+            "name": "Smolder",
+            "role": "bot",
+            "winrate": 0.501873
+        },
+        {
+            "name": "Tristana",
+            "role": "bot",
+            "winrate": 0.511794
+        },
+        {
+            "name": "Twitch",
+            "role": "bot",
+            "winrate": 0.511929
+        },
+        {
+            "name": "Varus",
+            "role": "bot",
+            "winrate": 0.480301
+        },
+        {
+            "name": "Vayne",
+            "role": "bot",
+            "winrate": 0.513417
+        },
+        {
+            "name": "Xayah",
+            "role": "bot",
+            "winrate": 0.511006
+        },
+        {
+            "name": "Zeri",
+            "role": "bot",
+            "winrate": 0.503357
+        },
+        {
+            "name": "Alistar",
+            "role": "support",
+            "winrate": 0.508617
+        },
+        {
+            "name": "Ashe",
+            "role": "support",
+            "winrate": 0.502587
+        },
+        {
+            "name": "Bard",
+            "role": "support",
+            "winrate": 0.512778
+        },
+        {
+            "name": "Blitzcrank",
+            "role": "support",
+            "winrate": 0.505041
+        },
+        {
+            "name": "Brand",
+            "role": "support",
+            "winrate": 0.490962
+        },
+        {
+            "name": "Braum",
+            "role": "support",
+            "winrate": 0.522555
+        },
+        {
+            "name": "Galio",
+            "role": "support",
+            "winrate": 0.508594
+        },
+        {
+            "name": "Heimerdinger",
+            "role": "support",
+            "winrate": 0.523354
+        },
+        {
+            "name": "Hwei",
+            "role": "support",
+            "winrate": 0.506356
+        },
+        {
+            "name": "Janna",
+            "role": "support",
+            "winrate": 0.521784
+        },
+        {
+            "name": "Karma",
+            "role": "support",
+            "winrate": 0.50389
+        },
+        {
+            "name": "Leona",
+            "role": "support",
+            "winrate": 0.509508
+        },
+        {
+            "name": "Lulu",
+            "role": "support",
+            "winrate": 0.512973
+        },
+        {
+            "name": "Lux",
+            "role": "support",
+            "winrate": 0.502095
+        },
+        {
+            "name": "Maokai",
+            "role": "support",
+            "winrate": 0.503632
+        },
+        {
+            "name": "Milio",
+            "role": "support",
+            "winrate": 0.520243
+        },
+        {
+            "name": "Morgana",
+            "role": "support",
+            "winrate": 0.507307
+        },
+        {
+            "name": "Nami",
+            "role": "support",
+            "winrate": 0.519458
+        },
+        {
+            "name": "Nautilus",
+            "role": "support",
+            "winrate": 0.49695
+        },
+        {
+            "name": "Neeko",
+            "role": "support",
+            "winrate": 0.498721
+        },
+        {
+            "name": "Pyke",
+            "role": "support",
+            "winrate": 0.499107
+        },
+        {
+            "name": "Rakan",
+            "role": "support",
+            "winrate": 0.50807
+        },
+        {
+            "name": "Rell",
+            "role": "support",
+            "winrate": 0.514479
+        },
+        {
+            "name": "Renata Glasc",
+            "role": "support",
+            "winrate": 0.496524
+        },
+        {
+            "name": "Senna",
+            "role": "support",
+            "winrate": 0.499355
+        },
+        {
+            "name": "Seraphine",
+            "role": "support",
+            "winrate": 0.500666
+        },
+        {
+            "name": "Sona",
+            "role": "support",
+            "winrate": 0.524994
+        },
+        {
+            "name": "Soraka",
+            "role": "support",
+            "winrate": 0.514145
+        },
+        {
+            "name": "Swain",
+            "role": "support",
+            "winrate": 0.507295
+        },
+        {
+            "name": "Taric",
+            "role": "support",
+            "winrate": 0.519216
+        },
+        {
+            "name": "Thresh",
+            "role": "support",
+            "winrate": 0.513255
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "support",
+            "winrate": 0.51221
+        },
+        {
+            "name": "Vel'Koz",
+            "role": "support",
+            "winrate": 0.510957
+        },
+        {
+            "name": "Xerath",
+            "role": "support",
+            "winrate": 0.509687
+        },
+        {
+            "name": "Yuumi",
+            "role": "support",
+            "winrate": 0.493626
+        },
+        {
+            "name": "Zilean",
+            "role": "support",
+            "winrate": 0.521941
+        },
+        {
+            "name": "Zyra",
+            "role": "support",
+            "winrate": 0.505014
+        }
+    ],
+    "CHAMPION_LIST_GLOBAL_PICKRATE": [
+        {
+            "name": "Aatrox",
+            "role": "top",
+            "pickrate": 0.109143
+        },
+        {
+            "name": "Akali",
+            "role": "top",
+            "pickrate": 0.0830255
+        },
+        {
+            "name": "Camille",
+            "role": "top",
+            "pickrate": 0.0410412
+        },
+        {
+            "name": "Cho'Gath",
+            "role": "top",
+            "pickrate": 0.042213
+        },
+        {
+            "name": "Darius",
+            "role": "top",
+            "pickrate": 0.0622146
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "top",
+            "pickrate": 0.0916261
+        },
+        {
+            "name": "Fiora",
+            "role": "top",
+            "pickrate": 0.0473328
+        },
+        {
+            "name": "Gangplank",
+            "role": "top",
+            "pickrate": 0.052773
+        },
+        {
+            "name": "Garen",
+            "role": "top",
+            "pickrate": 0.0431303
+        },
+        {
+            "name": "Gnar",
+            "role": "top",
+            "pickrate": 0.0330569
+        },
+        {
+            "name": "Gwen",
+            "role": "top",
+            "pickrate": 0.0506774
+        },
+        {
+            "name": "Illaoi",
+            "role": "top",
+            "pickrate": 0.017468
+        },
+        {
+            "name": "Irelia",
+            "role": "top",
+            "pickrate": 0.0708184
+        },
+        {
+            "name": "Jax",
+            "role": "top",
+            "pickrate": 0.0877122
+        },
+        {
+            "name": "Jayce",
+            "role": "top",
+            "pickrate": 0.0613979
+        },
+        {
+            "name": "K'Sante",
+            "role": "top",
+            "pickrate": 0.0456679
+        },
+        {
+            "name": "Kayle",
+            "role": "top",
+            "pickrate": 0.0528987
+        },
+        {
+            "name": "Kennen",
+            "role": "top",
+            "pickrate": 0.0340504
+        },
+        {
+            "name": "Kled",
+            "role": "top",
+            "pickrate": 0.0167454
+        },
+        {
+            "name": "Malphite",
+            "role": "top",
+            "pickrate": 0.0586762
+        },
+        {
+            "name": "Mordekaiser",
+            "role": "top",
+            "pickrate": 0.0603452
+        },
+        {
+            "name": "Nasus",
+            "role": "top",
+            "pickrate": 0.0377323
+        },
+        {
+            "name": "Olaf",
+            "role": "top",
+            "pickrate": 0.0212067
+        },
+        {
+            "name": "Ornn",
+            "role": "top",
+            "pickrate": 0.0391759
+        },
+        {
+            "name": "Pantheon",
+            "role": "top",
+            "pickrate": 0.129984
+        },
+        {
+            "name": "Poppy",
+            "role": "top",
+            "pickrate": 0.0553876
+        },
+        {
+            "name": "Quinn",
+            "role": "top",
+            "pickrate": 0.0279136
+        },
+        {
+            "name": "Renekton",
+            "role": "top",
+            "pickrate": 0.0726878
+        },
+        {
+            "name": "Riven",
+            "role": "top",
+            "pickrate": 0.0514608
+        },
+        {
+            "name": "Rumble",
+            "role": "top",
+            "pickrate": 0.0219852
+        },
+        {
+            "name": "Sett",
+            "role": "top",
+            "pickrate": 0.0771953
+        },
+        {
+            "name": "Shen",
+            "role": "top",
+            "pickrate": 0.0582983
+        },
+        {
+            "name": "Singed",
+            "role": "top",
+            "pickrate": 0.0212351
+        },
+        {
+            "name": "Sion",
+            "role": "top",
+            "pickrate": 0.0547064
+        },
+        {
+            "name": "Tahm Kench",
+            "role": "top",
+            "pickrate": 0.0284789
+        },
+        {
+            "name": "Teemo",
+            "role": "top",
+            "pickrate": 0.0381719
+        },
+        {
+            "name": "Trundle",
+            "role": "top",
+            "pickrate": 0.0659573
+        },
+        {
+            "name": "Tryndamere",
+            "role": "top",
+            "pickrate": 0.0255512
+        },
+        {
+            "name": "Udyr",
+            "role": "top",
+            "pickrate": 0.0331875
+        },
+        {
+            "name": "Urgot",
+            "role": "top",
+            "pickrate": 0.028826
+        },
+        {
+            "name": "Volibear",
+            "role": "top",
+            "pickrate": 0.0676685
+        },
+        {
+            "name": "Wukong",
+            "role": "top",
+            "pickrate": 0.0463913
+        },
+        {
+            "name": "Yasuo",
+            "role": "top",
+            "pickrate": 0.115663
+        },
+        {
+            "name": "Yone",
+            "role": "top",
+            "pickrate": 0.0904664
+        },
+        {
+            "name": "Yorick",
+            "role": "top",
+            "pickrate": 0.0348062
+        },
+        {
+            "name": "Amumu",
+            "role": "jungle",
+            "pickrate": 0.0230517
+        },
+        {
+            "name": "Bel'Veth",
+            "role": "jungle",
+            "pickrate": 0.0201402
+        },
+        {
+            "name": "Briar",
+            "role": "jungle",
+            "pickrate": 0.0433403
+        },
+        {
+            "name": "Diana",
+            "role": "jungle",
+            "pickrate": 0.0968554
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "jungle",
+            "pickrate": 0.0916261
+        },
+        {
+            "name": "Ekko",
+            "role": "jungle",
+            "pickrate": 0.0952618
+        },
+        {
+            "name": "Elise",
+            "role": "jungle",
+            "pickrate": 0.0490384
+        },
+        {
+            "name": "Evelynn",
+            "role": "jungle",
+            "pickrate": 0.0272299
+        },
+        {
+            "name": "Fiddlesticks",
+            "role": "jungle",
+            "pickrate": 0.0422706
+        },
+        {
+            "name": "Gragas",
+            "role": "jungle",
+            "pickrate": 0.056287
+        },
+        {
+            "name": "Graves",
+            "role": "jungle",
+            "pickrate": 0.0579301
+        },
+        {
+            "name": "Hecarim",
+            "role": "jungle",
+            "pickrate": 0.0412626
+        },
+        {
+            "name": "Ivern",
+            "role": "jungle",
+            "pickrate": 0.0177713
+        },
+        {
+            "name": "Jarvan IV",
+            "role": "jungle",
+            "pickrate": 0.0772382
+        },
+        {
+            "name": "Karthus",
+            "role": "jungle",
+            "pickrate": 0.023544
+        },
+        {
+            "name": "Kayn",
+            "role": "jungle",
+            "pickrate": 0.0762934
+        },
+        {
+            "name": "Kha'Zix",
+            "role": "jungle",
+            "pickrate": 0.0726432
+        },
+        {
+            "name": "Kindred",
+            "role": "jungle",
+            "pickrate": 0.0349555
+        },
+        {
+            "name": "Lee Sin",
+            "role": "jungle",
+            "pickrate": 0.17191
+        },
+        {
+            "name": "Lillia",
+            "role": "jungle",
+            "pickrate": 0.0314349
+        },
+        {
+            "name": "Maokai",
+            "role": "jungle",
+            "pickrate": 0.0229998
+        },
+        {
+            "name": "Master Yi",
+            "role": "jungle",
+            "pickrate": 0.0448334
+        },
+        {
+            "name": "Nidalee",
+            "role": "jungle",
+            "pickrate": 0.0594029
+        },
+        {
+            "name": "Nocturne",
+            "role": "jungle",
+            "pickrate": 0.0688299
+        },
+        {
+            "name": "Nunu & Willump",
+            "role": "jungle",
+            "pickrate": 0.0285405
+        },
+        {
+            "name": "Rammus",
+            "role": "jungle",
+            "pickrate": 0.016713
+        },
+        {
+            "name": "Rek'Sai",
+            "role": "jungle",
+            "pickrate": 0.0133619
+        },
+        {
+            "name": "Sejuani",
+            "role": "jungle",
+            "pickrate": 0.0203519
+        },
+        {
+            "name": "Shaco",
+            "role": "jungle",
+            "pickrate": 0.0714834
+        },
+        {
+            "name": "Shyvana",
+            "role": "jungle",
+            "pickrate": 0.0149377
+        },
+        {
+            "name": "Taliyah",
+            "role": "jungle",
+            "pickrate": 0.0386828
+        },
+        {
+            "name": "Trundle",
+            "role": "jungle",
+            "pickrate": 0.0659573
+        },
+        {
+            "name": "Vi",
+            "role": "jungle",
+            "pickrate": 0.0479589
+        },
+        {
+            "name": "Viego",
+            "role": "jungle",
+            "pickrate": 0.140115
+        },
+        {
+            "name": "Warwick",
+            "role": "jungle",
+            "pickrate": 0.0565028
+        },
+        {
+            "name": "Wukong",
+            "role": "jungle",
+            "pickrate": 0.0463913
+        },
+        {
+            "name": "Xin Zhao",
+            "role": "jungle",
+            "pickrate": 0.0668973
+        },
+        {
+            "name": "Zac",
+            "role": "jungle",
+            "pickrate": 0.0484334
+        },
+        {
+            "name": "Zed",
+            "role": "jungle",
+            "pickrate": 0.144866
+        },
+        {
+            "name": "Zyra",
+            "role": "jungle",
+            "pickrate": 0.0342921
+        },
+        {
+            "name": "Ahri",
+            "role": "mid",
+            "pickrate": 0.0826176
+        },
+        {
+            "name": "Akali",
+            "role": "mid",
+            "pickrate": 0.0830255
+        },
+        {
+            "name": "Anivia",
+            "role": "mid",
+            "pickrate": 0.0274821
+        },
+        {
+            "name": "Annie",
+            "role": "mid",
+            "pickrate": 0.0351282
+        },
+        {
+            "name": "Aurelion Sol",
+            "role": "mid",
+            "pickrate": 0.0266355
+        },
+        {
+            "name": "Aurora",
+            "role": "mid",
+            "pickrate": 0.0532004
+        },
+        {
+            "name": "Azir",
+            "role": "mid",
+            "pickrate": 0.0311592
+        },
+        {
+            "name": "Cassiopeia",
+            "role": "mid",
+            "pickrate": 0.020673
+        },
+        {
+            "name": "Corki",
+            "role": "mid",
+            "pickrate": 0.0373479
+        },
+        {
+            "name": "Diana",
+            "role": "mid",
+            "pickrate": 0.0968554
+        },
+        {
+            "name": "Ekko",
+            "role": "mid",
+            "pickrate": 0.0952618
+        },
+        {
+            "name": "Fizz",
+            "role": "mid",
+            "pickrate": 0.0281382
+        },
+        {
+            "name": "Galio",
+            "role": "mid",
+            "pickrate": 0.056523
+        },
+        {
+            "name": "Hwei",
+            "role": "mid",
+            "pickrate": 0.0718411
+        },
+        {
+            "name": "Karma",
+            "role": "mid",
+            "pickrate": 0.101329
+        },
+        {
+            "name": "Kassadin",
+            "role": "mid",
+            "pickrate": 0.0262819
+        },
+        {
+            "name": "Katarina",
+            "role": "mid",
+            "pickrate": 0.0631018
+        },
+        {
+            "name": "LeBlanc",
+            "role": "mid",
+            "pickrate": 0.0608197
+        },
+        {
+            "name": "Lissandra",
+            "role": "mid",
+            "pickrate": 0.0359708
+        },
+        {
+            "name": "Lux",
+            "role": "mid",
+            "pickrate": 0.0948295
+        },
+        {
+            "name": "Malzahar",
+            "role": "mid",
+            "pickrate": 0.056566
+        },
+        {
+            "name": "Mel",
+            "role": "mid",
+            "pickrate": 0.0851681
+        },
+        {
+            "name": "Naafiri",
+            "role": "mid",
+            "pickrate": 0.044779
+        },
+        {
+            "name": "Neeko",
+            "role": "mid",
+            "pickrate": 0.0326579
+        },
+        {
+            "name": "Orianna",
+            "role": "mid",
+            "pickrate": 0.0586997
+        },
+        {
+            "name": "Qiyana",
+            "role": "mid",
+            "pickrate": 0.0346416
+        },
+        {
+            "name": "Ryze",
+            "role": "mid",
+            "pickrate": 0.0427929
+        },
+        {
+            "name": "Sylas",
+            "role": "mid",
+            "pickrate": 0.129019
+        },
+        {
+            "name": "Syndra",
+            "role": "mid",
+            "pickrate": 0.0586081
+        },
+        {
+            "name": "Talon",
+            "role": "mid",
+            "pickrate": 0.0638487
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "mid",
+            "pickrate": 0.103285
+        },
+        {
+            "name": "Vex",
+            "role": "mid",
+            "pickrate": 0.0298892
+        },
+        {
+            "name": "Viktor",
+            "role": "mid",
+            "pickrate": 0.0640134
+        },
+        {
+            "name": "Vladimir",
+            "role": "mid",
+            "pickrate": 0.076866
+        },
+        {
+            "name": "Xerath",
+            "role": "mid",
+            "pickrate": 0.0762723
+        },
+        {
+            "name": "Yasuo",
+            "role": "mid",
+            "pickrate": 0.115663
+        },
+        {
+            "name": "Yone",
+            "role": "mid",
+            "pickrate": 0.0904664
+        },
+        {
+            "name": "Zed",
+            "role": "mid",
+            "pickrate": 0.144866
+        },
+        {
+            "name": "Ziggs",
+            "role": "mid",
+            "pickrate": 0.0167373
+        },
+        {
+            "name": "Zoe",
+            "role": "mid",
+            "pickrate": 0.0528825
+        },
+        {
+            "name": "Aphelios",
+            "role": "bot",
+            "pickrate": 0.0897584
+        },
+        {
+            "name": "Ashe",
+            "role": "bot",
+            "pickrate": 0.0647457
+        },
+        {
+            "name": "Caitlyn",
+            "role": "bot",
+            "pickrate": 0.121419
+        },
+        {
+            "name": "Draven",
+            "role": "bot",
+            "pickrate": 0.0419316
+        },
+        {
+            "name": "Ezreal",
+            "role": "bot",
+            "pickrate": 0.142434
+        },
+        {
+            "name": "Jhin",
+            "role": "bot",
+            "pickrate": 0.157582
+        },
+        {
+            "name": "Jinx",
+            "role": "bot",
+            "pickrate": 0.125842
+        },
+        {
+            "name": "Kai'Sa",
+            "role": "bot",
+            "pickrate": 0.195905
+        },
+        {
+            "name": "Kalista",
+            "role": "bot",
+            "pickrate": 0.0130148
+        },
+        {
+            "name": "Kog'Maw",
+            "role": "bot",
+            "pickrate": 0.0207663
+        },
+        {
+            "name": "Lucian",
+            "role": "bot",
+            "pickrate": 0.172373
+        },
+        {
+            "name": "Miss Fortune",
+            "role": "bot",
+            "pickrate": 0.0689807
+        },
+        {
+            "name": "Nilah",
+            "role": "bot",
+            "pickrate": 0.0249364
+        },
+        {
+            "name": "Samira",
+            "role": "bot",
+            "pickrate": 0.0518866
+        },
+        {
+            "name": "Senna",
+            "role": "bot",
+            "pickrate": 0.0942391
+        },
+        {
+            "name": "Sivir",
+            "role": "bot",
+            "pickrate": 0.108391
+        },
+        {
+            "name": "Smolder",
+            "role": "bot",
+            "pickrate": 0.120358
+        },
+        {
+            "name": "Tristana",
+            "role": "bot",
+            "pickrate": 0.0793209
+        },
+        {
+            "name": "Twitch",
+            "role": "bot",
+            "pickrate": 0.0523845
+        },
+        {
+            "name": "Varus",
+            "role": "bot",
+            "pickrate": 0.0738183
+        },
+        {
+            "name": "Vayne",
+            "role": "bot",
+            "pickrate": 0.082869
+        },
+        {
+            "name": "Xayah",
+            "role": "bot",
+            "pickrate": 0.0600906
+        },
+        {
+            "name": "Zeri",
+            "role": "bot",
+            "pickrate": 0.0655989
+        },
+        {
+            "name": "Alistar",
+            "role": "support",
+            "pickrate": 0.0645154
+        },
+        {
+            "name": "Ashe",
+            "role": "support",
+            "pickrate": 0.0647457
+        },
+        {
+            "name": "Bard",
+            "role": "support",
+            "pickrate": 0.0543601
+        },
+        {
+            "name": "Blitzcrank",
+            "role": "support",
+            "pickrate": 0.050117
+        },
+        {
+            "name": "Brand",
+            "role": "support",
+            "pickrate": 0.0246769
+        },
+        {
+            "name": "Braum",
+            "role": "support",
+            "pickrate": 0.0794271
+        },
+        {
+            "name": "Galio",
+            "role": "support",
+            "pickrate": 0.056523
+        },
+        {
+            "name": "Heimerdinger",
+            "role": "support",
+            "pickrate": 0.0175369
+        },
+        {
+            "name": "Hwei",
+            "role": "support",
+            "pickrate": 0.0718411
+        },
+        {
+            "name": "Janna",
+            "role": "support",
+            "pickrate": 0.0497196
+        },
+        {
+            "name": "Karma",
+            "role": "support",
+            "pickrate": 0.101329
+        },
+        {
+            "name": "Leona",
+            "role": "support",
+            "pickrate": 0.0569326
+        },
+        {
+            "name": "Lulu",
+            "role": "support",
+            "pickrate": 0.13156
+        },
+        {
+            "name": "Lux",
+            "role": "support",
+            "pickrate": 0.0948295
+        },
+        {
+            "name": "Maokai",
+            "role": "support",
+            "pickrate": 0.0229998
+        },
+        {
+            "name": "Milio",
+            "role": "support",
+            "pickrate": 0.0852346
+        },
+        {
+            "name": "Morgana",
+            "role": "support",
+            "pickrate": 0.0502784
+        },
+        {
+            "name": "Nami",
+            "role": "support",
+            "pickrate": 0.133626
+        },
+        {
+            "name": "Nautilus",
+            "role": "support",
+            "pickrate": 0.0928069
+        },
+        {
+            "name": "Neeko",
+            "role": "support",
+            "pickrate": 0.0326579
+        },
+        {
+            "name": "Pyke",
+            "role": "support",
+            "pickrate": 0.0608635
+        },
+        {
+            "name": "Rakan",
+            "role": "support",
+            "pickrate": 0.0551735
+        },
+        {
+            "name": "Rell",
+            "role": "support",
+            "pickrate": 0.0553122
+        },
+        {
+            "name": "Renata Glasc",
+            "role": "support",
+            "pickrate": 0.014117
+        },
+        {
+            "name": "Senna",
+            "role": "support",
+            "pickrate": 0.0942391
+        },
+        {
+            "name": "Seraphine",
+            "role": "support",
+            "pickrate": 0.0359473
+        },
+        {
+            "name": "Sona",
+            "role": "support",
+            "pickrate": 0.0316693
+        },
+        {
+            "name": "Soraka",
+            "role": "support",
+            "pickrate": 0.0531761
+        },
+        {
+            "name": "Swain",
+            "role": "support",
+            "pickrate": 0.0393527
+        },
+        {
+            "name": "Taric",
+            "role": "support",
+            "pickrate": 0.0129143
+        },
+        {
+            "name": "Thresh",
+            "role": "support",
+            "pickrate": 0.117103
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "support",
+            "pickrate": 0.103285
+        },
+        {
+            "name": "Vel'Koz",
+            "role": "support",
+            "pickrate": 0.0407468
+        },
+        {
+            "name": "Xerath",
+            "role": "support",
+            "pickrate": 0.0762723
+        },
+        {
+            "name": "Yuumi",
+            "role": "support",
+            "pickrate": 0.0699742
+        },
+        {
+            "name": "Zilean",
+            "role": "support",
+            "pickrate": 0.0354096
+        },
+        {
+            "name": "Zyra",
+            "role": "support",
+            "pickrate": 0.0342921
+        }
+    ],
+    "CHAMPION_LIST_GLOBAL_BANRATE": [
+        {
+            "name": "Aatrox",
+            "role": "top",
+            "banrate": 0.125075
+        },
+        {
+            "name": "Akali",
+            "role": "top",
+            "banrate": 0.102794
+        },
+        {
+            "name": "Camille",
+            "role": "top",
+            "banrate": 0.0145341
+        },
+        {
+            "name": "Cho'Gath",
+            "role": "top",
+            "banrate": 0.0100386
+        },
+        {
+            "name": "Darius",
+            "role": "top",
+            "banrate": 0.137655
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "top",
+            "banrate": 0.151576
+        },
+        {
+            "name": "Fiora",
+            "role": "top",
+            "banrate": 0.0697489
+        },
+        {
+            "name": "Gangplank",
+            "role": "top",
+            "banrate": 0.0490251
+        },
+        {
+            "name": "Garen",
+            "role": "top",
+            "banrate": 0.0232586
+        },
+        {
+            "name": "Gnar",
+            "role": "top",
+            "banrate": 0.00976153
+        },
+        {
+            "name": "Gwen",
+            "role": "top",
+            "banrate": 0.085723
+        },
+        {
+            "name": "Illaoi",
+            "role": "top",
+            "banrate": 0.0304165
+        },
+        {
+            "name": "Irelia",
+            "role": "top",
+            "banrate": 0.137221
+        },
+        {
+            "name": "Jax",
+            "role": "top",
+            "banrate": 0.0901975
+        },
+        {
+            "name": "Jayce",
+            "role": "top",
+            "banrate": 0.0776265
+        },
+        {
+            "name": "K'Sante",
+            "role": "top",
+            "banrate": 0.0282161
+        },
+        {
+            "name": "Kayle",
+            "role": "top",
+            "banrate": 0.045944
+        },
+        {
+            "name": "Kennen",
+            "role": "top",
+            "banrate": 0.0211901
+        },
+        {
+            "name": "Kled",
+            "role": "top",
+            "banrate": 0.00649079
+        },
+        {
+            "name": "Malphite",
+            "role": "top",
+            "banrate": 0.087804
+        },
+        {
+            "name": "Mordekaiser",
+            "role": "top",
+            "banrate": 0.0622016
+        },
+        {
+            "name": "Nasus",
+            "role": "top",
+            "banrate": 0.0346351
+        },
+        {
+            "name": "Olaf",
+            "role": "top",
+            "banrate": 0.0138256
+        },
+        {
+            "name": "Ornn",
+            "role": "top",
+            "banrate": 0.00432073
+        },
+        {
+            "name": "Pantheon",
+            "role": "top",
+            "banrate": 0.117113
+        },
+        {
+            "name": "Poppy",
+            "role": "top",
+            "banrate": 0.0682901
+        },
+        {
+            "name": "Quinn",
+            "role": "top",
+            "banrate": 0.0192798
+        },
+        {
+            "name": "Renekton",
+            "role": "top",
+            "banrate": 0.0581251
+        },
+        {
+            "name": "Riven",
+            "role": "top",
+            "banrate": 0.0384324
+        },
+        {
+            "name": "Rumble",
+            "role": "top",
+            "banrate": 0.00589349
+        },
+        {
+            "name": "Sett",
+            "role": "top",
+            "banrate": 0.0487956
+        },
+        {
+            "name": "Shen",
+            "role": "top",
+            "banrate": 0.0356879
+        },
+        {
+            "name": "Singed",
+            "role": "top",
+            "banrate": 0.00431984
+        },
+        {
+            "name": "Sion",
+            "role": "top",
+            "banrate": 0.00981278
+        },
+        {
+            "name": "Tahm Kench",
+            "role": "top",
+            "banrate": 0.0105089
+        },
+        {
+            "name": "Teemo",
+            "role": "top",
+            "banrate": 0.0410004
+        },
+        {
+            "name": "Trundle",
+            "role": "top",
+            "banrate": 0.0263627
+        },
+        {
+            "name": "Tryndamere",
+            "role": "top",
+            "banrate": 0.0173163
+        },
+        {
+            "name": "Udyr",
+            "role": "top",
+            "banrate": 0.0279074
+        },
+        {
+            "name": "Urgot",
+            "role": "top",
+            "banrate": 0.00835405
+        },
+        {
+            "name": "Volibear",
+            "role": "top",
+            "banrate": 0.0444599
+        },
+        {
+            "name": "Wukong",
+            "role": "top",
+            "banrate": 0.0154052
+        },
+        {
+            "name": "Yasuo",
+            "role": "top",
+            "banrate": 0.200933
+        },
+        {
+            "name": "Yone",
+            "role": "top",
+            "banrate": 0.0480265
+        },
+        {
+            "name": "Yorick",
+            "role": "top",
+            "banrate": 0.116341
+        },
+        {
+            "name": "Amumu",
+            "role": "jungle",
+            "banrate": 0.013135
+        },
+        {
+            "name": "Bel'Veth",
+            "role": "jungle",
+            "banrate": 0.038759
+        },
+        {
+            "name": "Briar",
+            "role": "jungle",
+            "banrate": 0.0464833
+        },
+        {
+            "name": "Diana",
+            "role": "jungle",
+            "banrate": 0.0605301
+        },
+        {
+            "name": "Dr. Mundo",
+            "role": "jungle",
+            "banrate": 0.151576
+        },
+        {
+            "name": "Ekko",
+            "role": "jungle",
+            "banrate": 0.0448791
+        },
+        {
+            "name": "Elise",
+            "role": "jungle",
+            "banrate": 0.0535325
+        },
+        {
+            "name": "Evelynn",
+            "role": "jungle",
+            "banrate": 0.0380328
+        },
+        {
+            "name": "Fiddlesticks",
+            "role": "jungle",
+            "banrate": 0.0329734
+        },
+        {
+            "name": "Gragas",
+            "role": "jungle",
+            "banrate": 0.0177813
+        },
+        {
+            "name": "Graves",
+            "role": "jungle",
+            "banrate": 0.045673
+        },
+        {
+            "name": "Hecarim",
+            "role": "jungle",
+            "banrate": 0.0456095
+        },
+        {
+            "name": "Ivern",
+            "role": "jungle",
+            "banrate": 0.00861567
+        },
+        {
+            "name": "Jarvan IV",
+            "role": "jungle",
+            "banrate": 0.0305459
+        },
+        {
+            "name": "Karthus",
+            "role": "jungle",
+            "banrate": 0.0258332
+        },
+        {
+            "name": "Kayn",
+            "role": "jungle",
+            "banrate": 0.0779303
+        },
+        {
+            "name": "Kha'Zix",
+            "role": "jungle",
+            "banrate": 0.056762
+        },
+        {
+            "name": "Kindred",
+            "role": "jungle",
+            "banrate": 0.0402929
+        },
+        {
+            "name": "Lee Sin",
+            "role": "jungle",
+            "banrate": 0.202335
+        },
+        {
+            "name": "Lillia",
+            "role": "jungle",
+            "banrate": 0.027573
+        },
+        {
+            "name": "Maokai",
+            "role": "jungle",
+            "banrate": 0.0022162
+        },
+        {
+            "name": "Master Yi",
+            "role": "jungle",
+            "banrate": 0.0785215
+        },
+        {
+            "name": "Nidalee",
+            "role": "jungle",
+            "banrate": 0.0236414
+        },
+        {
+            "name": "Nocturne",
+            "role": "jungle",
+            "banrate": 0.123382
+        },
+        {
+            "name": "Nunu & Willump",
+            "role": "jungle",
+            "banrate": 0.00666994
+        },
+        {
+            "name": "Rammus",
+            "role": "jungle",
+            "banrate": 0.0286094
+        },
+        {
+            "name": "Rek'Sai",
+            "role": "jungle",
+            "banrate": 0.00413915
+        },
+        {
+            "name": "Sejuani",
+            "role": "jungle",
+            "banrate": 0.00295048
+        },
+        {
+            "name": "Shaco",
+            "role": "jungle",
+            "banrate": 0.266054
+        },
+        {
+            "name": "Shyvana",
+            "role": "jungle",
+            "banrate": 0.00240687
+        },
+        {
+            "name": "Taliyah",
+            "role": "jungle",
+            "banrate": 0.00822048
+        },
+        {
+            "name": "Trundle",
+            "role": "jungle",
+            "banrate": 0.0263627
+        },
+        {
+            "name": "Vi",
+            "role": "jungle",
+            "banrate": 0.0214599
+        },
+        {
+            "name": "Viego",
+            "role": "jungle",
+            "banrate": 0.109009
+        },
+        {
+            "name": "Warwick",
+            "role": "jungle",
+            "banrate": 0.0491887
+        },
+        {
+            "name": "Wukong",
+            "role": "jungle",
+            "banrate": 0.0154052
+        },
+        {
+            "name": "Xin Zhao",
+            "role": "jungle",
+            "banrate": 0.0426356
+        },
+        {
+            "name": "Zac",
+            "role": "jungle",
+            "banrate": 0.0220163
+        },
+        {
+            "name": "Zed",
+            "role": "jungle",
+            "banrate": 0.290192
+        },
+        {
+            "name": "Zyra",
+            "role": "jungle",
+            "banrate": 0.0207086
+        },
+        {
+            "name": "Ahri",
+            "role": "mid",
+            "banrate": 0.028188
+        },
+        {
+            "name": "Akali",
+            "role": "mid",
+            "banrate": 0.102794
+        },
+        {
+            "name": "Anivia",
+            "role": "mid",
+            "banrate": 0.0190897
+        },
+        {
+            "name": "Annie",
+            "role": "mid",
+            "banrate": 0.0125054
+        },
+        {
+            "name": "Aurelion Sol",
+            "role": "mid",
+            "banrate": 0.00668226
+        },
+        {
+            "name": "Aurora",
+            "role": "mid",
+            "banrate": 0.0440408
+        },
+        {
+            "name": "Azir",
+            "role": "mid",
+            "banrate": 0.00525394
+        },
+        {
+            "name": "Cassiopeia",
+            "role": "mid",
+            "banrate": 0.0127019
+        },
+        {
+            "name": "Corki",
+            "role": "mid",
+            "banrate": 0.0056094
+        },
+        {
+            "name": "Diana",
+            "role": "mid",
+            "banrate": 0.0605301
+        },
+        {
+            "name": "Ekko",
+            "role": "mid",
+            "banrate": 0.0448791
+        },
+        {
+            "name": "Fizz",
+            "role": "mid",
+            "banrate": 0.0311252
+        },
+        {
+            "name": "Galio",
+            "role": "mid",
+            "banrate": 0.0324134
+        },
+        {
+            "name": "Hwei",
+            "role": "mid",
+            "banrate": 0.0355841
+        },
+        {
+            "name": "Karma",
+            "role": "mid",
+            "banrate": 0.0547225
+        },
+        {
+            "name": "Kassadin",
+            "role": "mid",
+            "banrate": 0.0251127
+        },
+        {
+            "name": "Katarina",
+            "role": "mid",
+            "banrate": 0.06971
+        },
+        {
+            "name": "LeBlanc",
+            "role": "mid",
+            "banrate": 0.214153
+        },
+        {
+            "name": "Lissandra",
+            "role": "mid",
+            "banrate": 0.0153359
+        },
+        {
+            "name": "Lux",
+            "role": "mid",
+            "banrate": 0.0326102
+        },
+        {
+            "name": "Malzahar",
+            "role": "mid",
+            "banrate": 0.0708036
+        },
+        {
+            "name": "Mel",
+            "role": "mid",
+            "banrate": 0.265284
+        },
+        {
+            "name": "Naafiri",
+            "role": "mid",
+            "banrate": 0.131214
+        },
+        {
+            "name": "Neeko",
+            "role": "mid",
+            "banrate": 0.0180871
+        },
+        {
+            "name": "Orianna",
+            "role": "mid",
+            "banrate": 0.0141441
+        },
+        {
+            "name": "Qiyana",
+            "role": "mid",
+            "banrate": 0.0109873
+        },
+        {
+            "name": "Ryze",
+            "role": "mid",
+            "banrate": 0.00686685
+        },
+        {
+            "name": "Sylas",
+            "role": "mid",
+            "banrate": 0.101933
+        },
+        {
+            "name": "Syndra",
+            "role": "mid",
+            "banrate": 0.0395239
+        },
+        {
+            "name": "Talon",
+            "role": "mid",
+            "banrate": 0.078135
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "mid",
+            "banrate": 0.117367
+        },
+        {
+            "name": "Vex",
+            "role": "mid",
+            "banrate": 0.0356387
+        },
+        {
+            "name": "Viktor",
+            "role": "mid",
+            "banrate": 0.0414657
+        },
+        {
+            "name": "Vladimir",
+            "role": "mid",
+            "banrate": 0.105029
+        },
+        {
+            "name": "Xerath",
+            "role": "mid",
+            "banrate": 0.0517355
+        },
+        {
+            "name": "Yasuo",
+            "role": "mid",
+            "banrate": 0.200933
+        },
+        {
+            "name": "Yone",
+            "role": "mid",
+            "banrate": 0.0480265
+        },
+        {
+            "name": "Zed",
+            "role": "mid",
+            "banrate": 0.290192
+        },
+        {
+            "name": "Ziggs",
+            "role": "mid",
+            "banrate": 0.00197063
+        },
+        {
+            "name": "Zoe",
+            "role": "mid",
+            "banrate": 0.083205
+        },
+        {
+            "name": "Aphelios",
+            "role": "bot",
+            "banrate": 0.0321449
+        },
+        {
+            "name": "Ashe",
+            "role": "bot",
+            "banrate": 0.0147374
+        },
+        {
+            "name": "Caitlyn",
+            "role": "bot",
+            "banrate": 0.131218
+        },
+        {
+            "name": "Draven",
+            "role": "bot",
+            "banrate": 0.190314
+        },
+        {
+            "name": "Ezreal",
+            "role": "bot",
+            "banrate": 0.0484268
+        },
+        {
+            "name": "Jhin",
+            "role": "bot",
+            "banrate": 0.0148491
+        },
+        {
+            "name": "Jinx",
+            "role": "bot",
+            "banrate": 0.0278132
+        },
+        {
+            "name": "Kai'Sa",
+            "role": "bot",
+            "banrate": 0.0230194
+        },
+        {
+            "name": "Kalista",
+            "role": "bot",
+            "banrate": 0.00302874
+        },
+        {
+            "name": "Kog'Maw",
+            "role": "bot",
+            "banrate": 0.00601133
+        },
+        {
+            "name": "Lucian",
+            "role": "bot",
+            "banrate": 0.198283
+        },
+        {
+            "name": "Miss Fortune",
+            "role": "bot",
+            "banrate": 0.0125601
+        },
+        {
+            "name": "Nilah",
+            "role": "bot",
+            "banrate": 0.0427695
+        },
+        {
+            "name": "Samira",
+            "role": "bot",
+            "banrate": 0.0655352
+        },
+        {
+            "name": "Senna",
+            "role": "bot",
+            "banrate": 0.0734013
+        },
+        {
+            "name": "Sivir",
+            "role": "bot",
+            "banrate": 0.0633247
+        },
+        {
+            "name": "Smolder",
+            "role": "bot",
+            "banrate": 0.0529398
+        },
+        {
+            "name": "Tristana",
+            "role": "bot",
+            "banrate": 0.0505972
+        },
+        {
+            "name": "Twitch",
+            "role": "bot",
+            "banrate": 0.0458525
+        },
+        {
+            "name": "Varus",
+            "role": "bot",
+            "banrate": 0.0176012
+        },
+        {
+            "name": "Vayne",
+            "role": "bot",
+            "banrate": 0.0427527
+        },
+        {
+            "name": "Xayah",
+            "role": "bot",
+            "banrate": 0.0102622
+        },
+        {
+            "name": "Zeri",
+            "role": "bot",
+            "banrate": 0.0178407
+        },
+        {
+            "name": "Alistar",
+            "role": "support",
+            "banrate": 0.0271136
+        },
+        {
+            "name": "Ashe",
+            "role": "support",
+            "banrate": 0.0147374
+        },
+        {
+            "name": "Bard",
+            "role": "support",
+            "banrate": 0.0150208
+        },
+        {
+            "name": "Blitzcrank",
+            "role": "support",
+            "banrate": 0.126202
+        },
+        {
+            "name": "Brand",
+            "role": "support",
+            "banrate": 0.0115205
+        },
+        {
+            "name": "Braum",
+            "role": "support",
+            "banrate": 0.139089
+        },
+        {
+            "name": "Galio",
+            "role": "support",
+            "banrate": 0.0324134
+        },
+        {
+            "name": "Heimerdinger",
+            "role": "support",
+            "banrate": 0.0124857
+        },
+        {
+            "name": "Hwei",
+            "role": "support",
+            "banrate": 0.0355841
+        },
+        {
+            "name": "Janna",
+            "role": "support",
+            "banrate": 0.0162921
+        },
+        {
+            "name": "Karma",
+            "role": "support",
+            "banrate": 0.0547225
+        },
+        {
+            "name": "Leona",
+            "role": "support",
+            "banrate": 0.0461086
+        },
+        {
+            "name": "Lulu",
+            "role": "support",
+            "banrate": 0.211681
+        },
+        {
+            "name": "Lux",
+            "role": "support",
+            "banrate": 0.0326102
+        },
+        {
+            "name": "Maokai",
+            "role": "support",
+            "banrate": 0.0022162
+        },
+        {
+            "name": "Milio",
+            "role": "support",
+            "banrate": 0.0545866
+        },
+        {
+            "name": "Morgana",
+            "role": "support",
+            "banrate": 0.112985
+        },
+        {
+            "name": "Nami",
+            "role": "support",
+            "banrate": 0.0313173
+        },
+        {
+            "name": "Nautilus",
+            "role": "support",
+            "banrate": 0.134557
+        },
+        {
+            "name": "Neeko",
+            "role": "support",
+            "banrate": 0.0180871
+        },
+        {
+            "name": "Pyke",
+            "role": "support",
+            "banrate": 0.234221
+        },
+        {
+            "name": "Rakan",
+            "role": "support",
+            "banrate": 0.00485777
+        },
+        {
+            "name": "Rell",
+            "role": "support",
+            "banrate": 0.0270595
+        },
+        {
+            "name": "Renata Glasc",
+            "role": "support",
+            "banrate": 0.00207858
+        },
+        {
+            "name": "Senna",
+            "role": "support",
+            "banrate": 0.0734013
+        },
+        {
+            "name": "Seraphine",
+            "role": "support",
+            "banrate": 0.00427499
+        },
+        {
+            "name": "Sona",
+            "role": "support",
+            "banrate": 0.00258277
+        },
+        {
+            "name": "Soraka",
+            "role": "support",
+            "banrate": 0.0245938
+        },
+        {
+            "name": "Swain",
+            "role": "support",
+            "banrate": 0.00810718
+        },
+        {
+            "name": "Taric",
+            "role": "support",
+            "banrate": 0.00181379
+        },
+        {
+            "name": "Thresh",
+            "role": "support",
+            "banrate": 0.0542526
+        },
+        {
+            "name": "Twisted Fate",
+            "role": "support",
+            "banrate": 0.117367
+        },
+        {
+            "name": "Vel'Koz",
+            "role": "support",
+            "banrate": 0.00804336
+        },
+        {
+            "name": "Xerath",
+            "role": "support",
+            "banrate": 0.0517355
+        },
+        {
+            "name": "Yuumi",
+            "role": "support",
+            "banrate": 0.133585
+        },
+        {
+            "name": "Zilean",
+            "role": "support",
+            "banrate": 0.0138883
+        },
+        {
+            "name": "Zyra",
+            "role": "support",
+            "banrate": 0.0207086
+        }
+    ]
+}

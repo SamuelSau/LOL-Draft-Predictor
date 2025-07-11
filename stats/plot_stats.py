@@ -64,5 +64,5 @@ legend_labels = [
 ax.legend(wedges, legend_labels, title="Tiers", loc="center left", bbox_to_anchor=(1, 0.5))
 plt.title("Player Tier Distribution – NA Solo/Duo (Pie Chart)", fontsize=14)
 plt.tight_layout()
-plt.savefig("plots/tier_pie_chart.png")
+plt.savefig("plots/NA_tier_pie_chart.png")
 plt.close()

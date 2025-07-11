@@ -34,6 +34,7 @@ SAVE_PLOTS = True
 
 # ========== LOAD DATA ========== #
 def load_dataset_from_npz(path):
+    """Load and extract league_games.npz if it exist"""
     if not os.path.exists(path):
         print(f"Error: {path} not found.")
         return np.array([], dtype=np.float32), np.array([], dtype=np.float32)
