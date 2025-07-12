@@ -4,10 +4,11 @@ import sys
 from dotenv import load_dotenv
 import json
 import time
-from src.utils import get_routing_value, ensure_files_exist, save_match_details_to_npz, load_existing_data, calculate_time_difference
 
 # Add parent directory to path to ensure imports work correctly
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from src.utils import get_routing_value, ensure_files_exist, save_match_details_to_npz, load_existing_data
 
 load_dotenv()
 api_key = os.getenv("API_KEY")
@@ -73,7 +74,7 @@ def collect_puuids_and_write_to_file(api_key: str, puuids_file_path: str, all_pu
             f.write(f"{puuid},{region}\n")
 
     end_time = time.time()
-    print(f"It took {calculate_time_difference(start_time, end_time)} seconds to collect PUUIDs from all regions...\n")
+    print(f"It took {end_time - start_time} seconds to collect PUUIDs from all regions...\n")
     return all_puuids_region
 
 def collect_match_ids_and_write_to_file(api_key: str, match_ids_file_path: str, all_puuids_region: set[tuple[str, str]], all_match_ids_region: set[tuple[str, str]]) -> set[tuple[str, str]]:
@@ -129,7 +130,7 @@ def collect_match_ids_and_write_to_file(api_key: str, match_ids_file_path: str, 
     print(f"Collected and saved {len(all_match_ids_region)} unique match IDs")
     del matchIds #empty out the temporary storage of matchIds
     end_time = time.time()
-    print(f"It took {calculate_time_difference(start_time, end_time)} seconds to collect match IDs from all PUUIDs in all regions...\n")
+    print(f"It took {end_time - start_time} seconds to collect match IDs from all PUUIDs in all regions...\n")
     return all_match_ids_region
 
 def collect_match_details(api_key: str, region: str, all_match_ids_region: set[tuple[str, str]]) -> None:
@@ -189,42 +190,38 @@ def collect_match_details(api_key: str, region: str, all_match_ids_region: set[t
 
                 else:
                     print(f"{response.status_code} error: Match ID {match_id} not found in region: {region} in region routing: {region_routing}\n")
-                    #for specifically 404 errors:
-                
-                """
-                See in notes.txt for more info
-                """
+
                 print("--------------------------------\n")
 
         except Exception as e:
             print(f"Error processing match ID {match_id}: {str(e)}")
 
     end_time = time.time()
-    print(f"It took {calculate_time_difference(start_time, end_time)} seconds to collect match details for all match IDs in region {region}...\n")
+    print(f"It took {end_time - start_time} seconds to collect match details for all match IDs in region {region}...\n")
     return None
 
 def integrated_data_collection(api_key: str, puuids_file_path: str, match_ids_file_path: str, match_details_file_path) -> None:
     start_time = time.time()
 
-    all_puuids_region, all_match_ids_region, all_match_details = load_existing_data(puuids_file_path, match_ids_file_path, match_details_file_path)
+    all_puuids_region, all_match_ids_region = load_existing_data(puuids_file_path, match_ids_file_path)
     # Step 1: Collect PUUIDs if we don't have any
     if not all_puuids_region:
         print("No existing PUUIDs found. Collecting PUUIDs from top players...")
         all_puuids_region = collect_puuids_and_write_to_file(api_key, puuids_file_path, all_puuids_region)
         
     # Step 2: Collect match IDs for each PUUID
-    if not all_match_ids_region and all_puuids_region:
+    if not all_match_ids_region:
         print("Collecting match IDs for PUUIDs...")
         all_match_ids_region = collect_match_ids_and_write_to_file(api_key, match_ids_file_path, all_puuids_region, all_match_ids_region)
     
     # Step 3: Collect match details for each match ID
-    if not all_match_details:
+    if not (os.path.exists(match_details_file_path) and os.path.getsize(match_details_file_path) > 0):
         print("No existing match details found. Collecting match details for match IDs...")
         for _, region in all_match_ids_region:
             collect_match_details(api_key, region, all_match_ids_region) #write to file instead of storing data into memory
     
     end_time = time.time()
-    print(f"Data collection completed in {calculate_time_difference(start_time, end_time)} seconds")
+    print(f"Data collection completed in {end_time - start_time} seconds")
     return None
 
 if __name__ == "__main__":
@@ -237,4 +234,4 @@ if __name__ == "__main__":
         integrated_data_collection(api_key, puuids_file_path, match_ids_file_path, match_details_file_path)
         save_match_details_to_npz()
         end_time = time.time()
-        print(f"Total time taken for collecting data and saving into npz: {calculate_time_difference(start_time, end_time)} seconds")
+        print(f"Total time taken for collecting data and saving into npz: {end_time - start_time} seconds")

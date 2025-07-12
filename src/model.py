@@ -1,29 +1,34 @@
+import os
+import sys
+import time
+import json
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-import os
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, classification_report
-import time
-import json
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+league_stats_file_path = os.path.join(PROJECT_ROOT, "stats/league_stats.json")
+league_constants_file_path = os.path.join(PROJECT_ROOT, "constants/league_constants.json")
 
 #safety check for opening the constants file
-if not os.path.exists("league_constants.json"):
-    print("Error: league_constants.json not found. Please ensure it exists in the current directory.")
-    import sys
+if not os.path.exists(league_stats_file_path):
+    print(f"Error: {league_stats_file_path} not found. Please ensure it exists in the current directory.")
     sys.exit(1)
 
-with open("league_constants.json", "r", encoding="utf-8") as f:
+with open(league_constants_file_path, "r") as f:
     constants = json.load(f)
 
 # ========== CONFIG ========== #
 USE_CUDA = torch.cuda.is_available()
 DEVICE = torch.device("cuda" if USE_CUDA else "cpu")
-LEARNING_RATE = 0.001
-EPOCHS = 10
+LEARNING_RATE = 0.0001
+EPOCHS = 20
 BATCH_SIZE = 32
 
 MATCH_FILE = "league_games.npz"
@@ -62,9 +67,9 @@ print(f"Label distribution: {dict(zip(unique, counts))}")
 
 if len(X) == 0 or len(y) == 0:
     print("Error: Empty dataset. Exiting.")
-    import sys
     sys.exit(1)
 
+X = np.nan_to_num(X, nan=0.0, posinf=0.0, neginf=0.0)
 
 # ========== SPLIT DATA ========== #
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -80,10 +85,13 @@ class DraftWinPredictor(nn.Module):
         self.model = nn.Sequential(
             nn.Linear(input_size, 1024),
             nn.ReLU(),
+            nn.Dropout(0.3),
             nn.Linear(1024, 512),
             nn.ReLU(),
+            nn.Dropout(0.3),
             nn.Linear(512, 256),
             nn.ReLU(),
+            nn.Dropout(0.3),
             nn.Linear(256, 1)
         )
 
@@ -135,9 +143,6 @@ for epoch in range(EPOCHS):
         val_accuracies.append(val_accuracy)
 
     print(f"Epoch {epoch + 1}/{EPOCHS}, Loss: {epoch_loss:.4f}, Val Accuracy: {val_accuracy:.4f}")
-
-end_train_time = time.time()
-print(f"\nTraining completed in {end_train_time - start_train_time:.2f} seconds")
 
 # ========== FINAL EVALUATION ========== #
 with torch.no_grad():
@@ -205,3 +210,4 @@ plt.savefig('plots/confusion_matrix.png')
 plt.close()
 
 print("\n📊 Visualizations saved to 'plots/'")
+

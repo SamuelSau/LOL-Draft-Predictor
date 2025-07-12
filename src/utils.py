@@ -1,8 +1,9 @@
 import os
 import sys
 import numpy as np
+import json
 from datetime import datetime
-from src.populate_data import parse_game
+from src.populate_data import match_to_feature_vector
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,11 +41,10 @@ def get_routing_value(region):
         print(f"Region {region} not found in mappings, defaulting to americas...")
         return "americas"
 
-def load_existing_data(puuids_file_path: str, match_ids_file_path: str, match_details_file_path: str) -> tuple[set[tuple[str, str]], set[tuple[str, str]], set[str]]:
+def load_existing_data(puuids_file_path: str, match_ids_file_path: str) -> tuple[set[tuple[str, str]], set[tuple[str, str]], set[str]]:
     """Load puuids, match_ids, and match_details if files exist"""
     all_puuids_region = set()
     all_match_ids_region = set()
-    all_match_details = set()
     
     if os.path.exists(puuids_file_path) and os.path.getsize(puuids_file_path) > 0:
         with open(puuids_file_path, 'r') as f:
@@ -65,43 +65,38 @@ def load_existing_data(puuids_file_path: str, match_ids_file_path: str, match_de
     if os.path.exists(match_details_file_path) and os.path.getsize(match_details_file_path) > 0: #read from file, do not add into cache since it's too large for overhead
         print(f"Match details file {match_details_file_path} already exists. Skipping match details collection.")
     
-    return all_puuids_region, all_match_ids_region, all_match_details
+    return all_puuids_region, all_match_ids_region
 
 def save_match_details_to_npz(filename=OUTPUT_FILE):
-    """Read from match_details file and convert to np obects"""
-    match_details_list = []
-
-    if os.path.exists(match_details_file_path) and os.path.getsize(match_details_file_path) > 0:
-        with open(match_details_file_path, 'r') as f:
-            for line in f:
-                match_details = line.strip()
-                if match_details:
-                    match_details_list.append(match_details)
-        print(f"Loaded {len(match_details_list)} match details from {match_details_file_path}")
+    """Read from match_details file and convert to np obects"""    
+    X_data = []
+    y_data = []
     
     try:
-        X_data = []
-        y_data = []
-        
-        for match_details in match_details_list:
-            X, y = parse_game(match_details)
-            X_data.append(X)
-            y_data.append(y)
-        
-        X_data = np.array(X_data, dtype=np.float32)
-        y_data = np.array(y_data, dtype=np.float32)
-        
-        if os.path.exists(filename):
-            with np.load(filename) as existing_data:
-                X_existing = existing_data['X']
-                y_existing = existing_data['y']
-                X_combined = np.concatenate([X_existing, X_data])
-                y_combined = np.concatenate([y_existing, y_data])
-            np.savez_compressed(filename, X=X_combined, y=y_combined)
-        else:
-            np.savez_compressed(filename, X=X_data, y=y_data)
-        
-        print(f"Saved {len(X_data)} match details to {filename}")
+        if os.path.exists(match_details_file_path) and os.path.getsize(match_details_file_path) > 0:
+                with open(match_details_file_path, 'r') as f:
+                    for line in f:
+                        try:
+                            match_details = json.loads(line)
+                            X, y = match_to_feature_vector(match_details)
+                            X_data.append(X)
+                            y_data.append(y)
+                        except json.JSONDecodeError:
+                            print(f"Skipping invalid line: {line}")
+                            continue
+                        
+                X_data = np.array(X_data, dtype=np.float32)
+                y_data = np.array(y_data, dtype=np.float32)
+                if os.path.exists(filename):
+                    with np.load(filename) as existing_data:
+                        X_existing = existing_data['X']
+                        y_existing = existing_data['y']
+                        X_combined = np.concatenate([X_existing, X_data])
+                        y_combined = np.concatenate([y_existing, y_data])
+                    np.savez_compressed(filename, X=X_combined, y=y_combined)
+                else:
+                    np.savez_compressed(filename, X=X_data, y=y_data)
+                print(f"Saved {len(X_data)} match details to {filename}")
     except Exception as e:
         print(f"Error saving match details: {str(e)}")
 
@@ -124,10 +119,3 @@ def ensure_files_exist():
         with open(match_details_file_path, 'w') as f:
             pass
         print(f"Created empty file: {match_details_file_path}")
-
-def calculate_time_difference(start_time: datetime, end_time: datetime) -> float:
-    """Calculate the time difference in seconds between two datetime objects"""
-    if start_time and end_time:
-        return (end_time - start_time).total_seconds()
-    else:
-        return None
